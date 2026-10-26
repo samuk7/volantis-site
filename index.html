@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Volantis Tecnologia</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: página única, coluna estreita, cabeçalho + 4 blocos + rodapé com dados legais */
+:root{
+  --bg:#F2F5F7; --surface:#FFFFFF; --ink:#0F1B2D; --muted:#4A5A6E; --line:#D5DDE4;
+  --accent:#0B6E69; --accent-ink:#FFFFFF; --soft:#E1EEED;
+  --f-display:"Bricolage Grotesque","Segoe UI",Arial,sans-serif;
+  --f-body:"Source Sans 3","Segoe UI",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1620; --surface:#141F2B; --ink:#E8EEF4; --muted:#9FB0C2; --line:#263546;
+    --accent:#4FC2BA; --accent-ink:#06201E; --soft:#12302F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1620; --surface:#141F2B; --ink:#E8EEF4; --muted:#9FB0C2; --line:#263546;
+  --accent:#4FC2BA; --accent-ink:#06201E; --soft:#12302F; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--f-body); font-size:17px; line-height:1.6;
+  padding-block:0; padding-left:max(16px,env(safe-area-inset-left,0px)); padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+.wrap{max-width:760px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;padding-block:28px 12px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:.01em}
+.city{color:var(--muted);font-size:15px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(30px,6vw,44px);line-height:1.1;margin:44px 0 16px;text-wrap:balance;max-width:20ch}
+.lead{font-size:19px;color:var(--muted);max-width:56ch;margin:0 0 8px}
+h2{font-family:var(--f-display);font-weight:500;font-size:24px;margin:0 0 14px;text-wrap:balance}
+section{margin-top:52px}
+.flow{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.flow li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 16px;align-items:baseline;min-width:0}
+.flow .n{font-family:var(--f-display);font-weight:700;color:var(--accent);font-size:20px}
+.flow b{font-weight:600}
+.flow p{margin:0;grid-column:2;color:var(--muted);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--soft);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:15px}
+.note{color:var(--muted);font-size:16px;max-width:60ch}
+.contact{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:grid;gap:6px}
+.contact dt{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.contact dd{margin:0 0 8px;font-size:18px;word-break:break-word}
+footer{margin-top:64px;padding-block:24px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.7}
+footer b{color:var(--ink);font-weight:600}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="brand">Volantis Tecnologia</span>
+    <span class="city">Nova Ponte, Minas Gerais</span>
+  </header>
+
+  <main>
+    <h1>Atendimento e pedidos por WhatsApp para o comércio da cidade</h1>
+    <p class="lead">Um assistente recebe a mensagem do cliente, anota o pedido e entrega tudo organizado para a equipe do comércio. A equipe assume a conversa quando quiser.</p>
+
+    <section aria-labelledby="como">
+      <h2 id="como">Como funciona</h2>
+      <ol class="flow">
+        <li><span class="n">1</span><b>O cliente escreve no WhatsApp do comércio</b><p>O mesmo número de sempre, sem baixar aplicativo.</p></li>
+        <li><span class="n">2</span><b>O assistente anota o pedido</b><p>Pergunta só o que falta, como quantidade, entrega e forma de pagamento.</p></li>
+        <li><span class="n">3</span><b>A equipe recebe o pedido pronto</b><p>Pode assumir a conversa a qualquer momento e atender direto, pelo celular ou pelo computador.</p></li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="para-quem">
+      <h2 id="para-quem">Para quem é</h2>
+      <ul class="chips">
+        <li>Lanchonetes</li><li>Padarias</li><li>Açougues</li><li>Restaurantes</li><li>Mercados</li>
+      </ul>
+      <p class="note">Para comércios que recebem pedidos por WhatsApp e querem responder mais rápido, com menos mensagens perdidas.</p>
+    </section>
+
+    <section aria-labelledby="dados">
+      <h2 id="dados">Seus dados e os dos seus clientes</h2>
+      <p class="note">Cada comércio usa o próprio número de WhatsApp, ligado pela plataforma oficial da Meta. As conversas de um comércio ficam separadas das de outro. Os dados dos clientes pertencem ao comércio.</p>
+    </section>
+
+    <section aria-labelledby="contato">
+      <h2 id="contato">Contato</h2>
+      <dl class="contact">
+        <dt>Endereço</dt><dd>Rua Ordália Carneiro de Oliveira, 321, Sala B, Centro, Nova Ponte/MG, CEP 38.160-000</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <b>Volantis Tecnologia Ltda</b><br>
+    CNPJ 61.876.505/0001-09<br>
+    Rua Ordália Carneiro de Oliveira, 321, Sala B, Centro, Nova Ponte/MG, CEP 38.160-000
+  </footer>
+</div>
+
+</html>
