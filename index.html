@@ -50,9 +50,14 @@ section{margin-top:52px}
 footer{margin-top:64px;padding-block:24px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.7}
 footer b{color:var(--ink);font-weight:600}
 .services{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-.services li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;min-width:0}
+.services li{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:16px 18px;min-width:0}
 .services b{font-weight:600;display:block;margin-bottom:2px}
 .services p{margin:0;color:var(--muted);font-size:16px}
+.hero{background:var(--soft);border-radius:10px;padding:8px 24px 28px;margin-top:24px}
+.hero h1{margin-top:28px}
+.brand{color:var(--accent)}
+h2{border-left:4px solid var(--accent);padding-left:12px}
+.flow li{border-top:3px solid var(--accent)}
 .contact a{color:var(--accent);text-decoration:none}
 .contact a:hover{text-decoration:underline}
 </style>
@@ -64,8 +69,10 @@ footer b{color:var(--ink);font-weight:600}
   </header>
 
   <main>
+    <div class="hero">
     <h1>Automação e tecnologia para o comércio da cidade</h1>
     <p class="lead">Ajudamos comércios a trabalhar com mais rapidez e organização, trocando tarefas repetitivas por soluções simples de usar.</p>
+    </div>
 
     <section aria-labelledby="fazemos">
       <h2 id="fazemos">O que fazemos</h2>
