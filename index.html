@@ -49,6 +49,10 @@ section{margin-top:52px}
 .contact dd{margin:0 0 8px;font-size:18px;word-break:break-word}
 footer{margin-top:64px;padding-block:24px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;line-height:1.7}
 footer b{color:var(--ink);font-weight:600}
+.services{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.services li{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:16px 18px;min-width:0}
+.services b{font-weight:600;display:block;margin-bottom:2px}
+.services p{margin:0;color:var(--muted);font-size:16px}
 .contact a{color:var(--accent);text-decoration:none}
 .contact a:hover{text-decoration:underline}
 </style>
@@ -60,11 +64,20 @@ footer b{color:var(--ink);font-weight:600}
   </header>
 
   <main>
-    <h1>Atendimento e pedidos por WhatsApp para o comércio da cidade</h1>
-    <p class="lead">Um assistente recebe a mensagem do cliente, anota o pedido e entrega tudo organizado para a equipe do comércio. A equipe assume a conversa quando quiser.</p>
+    <h1>Automação e tecnologia para o comércio da cidade</h1>
+    <p class="lead">Ajudamos comércios a trabalhar com mais rapidez e organização, trocando tarefas repetitivas por soluções simples de usar.</p>
+
+    <section aria-labelledby="fazemos">
+      <h2 id="fazemos">O que fazemos</h2>
+      <ul class="services">
+        <li><b>Atendimento e pedidos por WhatsApp</b><p>Um assistente recebe a mensagem do cliente, anota o pedido e entrega tudo organizado para a equipe.</p></li>
+        <li><b>Automação de rotinas</b><p>Tarefas repetitivas do dia a dia, como montar cartazes, promoções e planilhas, passam a ser feitas sozinhas.</p></li>
+        <li><b>Sistemas sob medida</b><p>Ferramentas pequenas feitas para a necessidade de cada comércio, sem pagar por um programa grande que ele não usa.</p></li>
+      </ul>
+    </section>
 
     <section aria-labelledby="como">
-      <h2 id="como">Como funciona</h2>
+      <h2 id="como">Atendimento por WhatsApp: como funciona</h2>
       <ol class="flow">
         <li><span class="n">1</span><b>O cliente escreve no WhatsApp do comércio</b><p>O mesmo número de sempre, sem baixar aplicativo.</p></li>
         <li><span class="n">2</span><b>O assistente anota o pedido</b><p>Pergunta só o que falta, como quantidade, entrega e forma de pagamento.</p></li>
@@ -77,7 +90,7 @@ footer b{color:var(--ink);font-weight:600}
       <ul class="chips">
         <li>Lanchonetes</li><li>Padarias</li><li>Açougues</li><li>Restaurantes</li><li>Mercados</li>
       </ul>
-      <p class="note">Para comércios que recebem pedidos por WhatsApp e querem responder mais rápido, com menos mensagens perdidas.</p>
+      <p class="note">Para comércios que querem responder mais rápido, perder menos mensagens e gastar menos tempo com tarefas repetitivas.</p>
     </section>
 
     <section aria-labelledby="dados">
